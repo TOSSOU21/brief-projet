@@ -12,7 +12,7 @@
 header {
     width: 100%;
     height: 100vh;
-    background: url(../frites/you1.jpg) no-repeat center/cover;
+    background: url(frites/you1.jpg) no-repeat center/cover;
 }
 
 .nos-plat {
@@ -265,7 +265,7 @@ nav li a {
 }
 
 .formule {
-    background: url(../frites/you6.jpg);
+    background: url(frites/you6.jpg);
     width: 100%;
     height: 100vh;
 }
@@ -284,7 +284,7 @@ nav li a {
 }
 
 .formlai2 {
-    background: url(../frites/you6.jpg);
+    background: url(frites/you6.jpg);
     width: 100%;
     height: 100hv;
 }
