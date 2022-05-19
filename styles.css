@@ -396,7 +396,7 @@ button:hover {
 .localisation {
     display: flex;
     justify-content: space-around;
-    background-color: rgb(233, 101, 13);
+    background-color: rgb(31, 83, 150);
     margin-top: 20px;
 
 }
