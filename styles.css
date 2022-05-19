@@ -59,6 +59,16 @@ nav li a {
     margin-top: -60px;
 }
 
+.couleur {
+    transition: color.3s;
+}
+
+.couleur:hover,
+.couleur.active {
+    color: red;
+
+}
+
 .slogant2 {
     font-size: 30px;
     width: 90%;
@@ -443,7 +453,7 @@ button:hover {
     justify-content: space-between;
     position: relative;
     top: 300px;
-    right: 20pxseeeeeeeeeeeeeeeeeeeeddd<cccccc²                                                                                                                                                                                                                                                                                                                                                         A²AAAAAAAAAAAAAAAAAAAAAA    ²AAA1;
+    right: 20px;
 }
 
 .instagramme {
