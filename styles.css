@@ -6,117 +6,104 @@
 }
 
 .body {
-    justify-content: space-around;
+    display: block;
+    flex-wrap: wrap;
+
+}
+
+h2{
+    color: black;
+    text-align: center;
+    font-size: 2em;
+}
+
+
+.logo img {
+    position: relative;
+    top: -3vh;
+    height: 100px;
+    width: 100px;
+
 }
 
 header {
     width: 100%;
     height: 100vh;
     background: url(frites/you.jpg) no-repeat center/cover;
-}
-
-.nos-plat {
-    font-size: 50px;
+    color: #B68B17;
     text-align: center;
-    font-weight: bold;
 }
 
-.top-bar {
+header nav{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-between ;
+    padding: 20px;
 }
 
-.logo {
-    position: relative;
-    top: 15px;
-    height: 100px;
-    width: 100px;
-    left: 100px;
-
-}
-
-nav li {
-    display: inline-block;
-    margin-right: 50px;
-    margin-top: 50px;
-}
-
-nav li a {
-    color: rgb(255, 254, 251);
+header nav a{
+    color:#bababa;
     text-decoration: none;
-    font-size: 20px;
-    text-transform: uppercase;
-    display: flex;
-    flex-wrap: wrap
+    margin-right: 10px;
 }
 
-.slogant {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 4em;
-    width: 90%;
-    height: 2%;
-    text-align: center;
-    color: rgb(247, 168, 12);
-    position: relative;
-    left: 10vh;
-    top: 15vh;
-}
 
-.couleur {
+header nav a{
+    color: rgb(250, 248, 248);
     transition: color.3s;
-}
 
-.couleur:hover,
-.couleur.active {
-    color: red;
+} 
 
-}
+header.principale{
+    position: relative;
+    top: 50px;
+   
+} 
 
-.slogant2 {
-    display: flex;
-    flex-wrap: wrap;
+header .principale h3{
+    margin-top: 50px;
+    padding: 5px;
     font-size: 2em;
-    width: 90%;
-    height: 100px;
-    text-align: center;
-    color:rgb(247, 168, 12);
-    position: relative;
-    left: 10vh;
-    top: 40vh;
+    color: rgb(233, 174, 10);
+}
+
+header .principale h1{
+    margin-top: 5px;
+    font-size: 3em;
+    color: rgb(233, 174, 10);
 }
 
 .barre-de-Recherche {
     position: relative;
-    bottom: 500px;
-    left: 35%;
+    left: 65vh;
+    top:10vh;
+   
 }
 
-.barre-de-Recherche {
+.barre-de_Recherche label{
+    font-size: 15px; 
+   
+}
+.barre-de-Recherche input{
     width: 400px;
     height: 45px;
     border-radius: 15px;
-    background-color: rgba(248, 242, 242, 0.692);
-    font-size: 15px;
-    padding: 10px;
+    background-color: rgba(252, 248, 248, 0.692);
     border: none;
 }
 
+
+ 
+
+
+
 .plats {
     display: flex;
-    justify-content: space-evenly;
-    position: relative;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.nos-plat {
-    font-size: 40px;
-}
-
-
-  
-
-
-.image {
+.food img{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -126,10 +113,10 @@ nav li a {
     margin-left: 8.1vh;
     border-width: 0.9vh;
     background-color: rgb(255, 255, 255);
-    padding: 5vh;
+    padding: 2vh;
     border-top-left-radius: 30%;
     border-top-right-radius: 30%;
-    box-shadow: 0px 0px 5px;
+    box-shadow: 0px 0px 3px;
 }
 
 .comentaire {
@@ -141,61 +128,140 @@ nav li a {
     box-shadow: 0px 0px 5px;
 }
 
-.prix {
-    color: rgb(218, 24, 24);
-    font-size: 1.5em;
-    font-weight: bold;
-    position: relative;
-    top: 5vh;
-}
 
-.titre {
-    color: rgb(12, 3, 0);
-    font-weight: bold;
-    font-size: 1.5em;
-    position: relative;
-    top: 5vh;
-}
-
-.botton button {
-    background-color: #B68B17;
+.food button {
+    padding: 15px 45px;
     color: white;
-    width: 20vh;
-    height: 7vh;
+    background: transparent;
     font-size: 1em;
     font-weight: bold;
-    border: none;
+    border: 0;
     border-radius: 1vh;
+    overflow: hidden;
     box-shadow: 0px 0px 5px;
     position: relative;
-    bottom: 4vh;
+    bottom: 2vh;
     left: 40vh;
+    cursor: pointer;
 }
 
-.voir-plus {
-    position: relative;
-    left: 30vh;
-    background-color: red;
+.food button::after{
+    content: '';
+    background: linear-gradient(225deg, #e6e7e5 0%, #cf8413 50%, #c52306 100%);
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: -50px;
+    left: -100px;
+    z-index:-1;
+    transition: all .2s;
 }
+
+.food button:hover::after{
+    transform: rotate(150deg);
+}
+
+.food button:hover{
+    transform: translate(0, -6px);
+}
+
+.voir-plus button {
+    position: relative;
+    padding: 20px 50px;
+    border-radius: 30px;
+    color:rgb(252, 249, 249);
+    background: transparent;
+    border: 0;
+    overflow: hidden;
+    left: 100vh;
+    cursor: pointer;
+    font-size: 1.2em;
+    box-shadow: 0px -0px 0px 0px rgba(143, 64, 248, .5), 0px 0px 0px 0px rgba(39, 200, 255, .5);
+    transition: all .6s;
+}
+
+.voir-plus button::after{
+    content: '';
+    background: linear-gradient(225deg, #6ed827 0%, #e24a2f 50%, #81cf41 100%);
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: -50px;
+    left: -100px;
+    z-index:-1;
+    transition: all .2s;
+}
+
+.voir-plus button:hover::after{
+    transform: rotate(150deg);
+}
+
+.voir-plus button:hover{
+    transform: translate(0, -6px);
+}
+
+.voir-plus a{
+    text-decoration: none;
+    color: white;
+}
+
+
+form button{
+    position:relative;
+    left: 60vh;
+    font-size: 20px;
+    padding: 15px 40px;
+    background: transparent;
+    border-radius: 3vh;
+    border:0;
+    transition: all .6s;
+    color:rgb(252, 249, 249);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+form button::after{
+    content: '';
+    background: linear-gradient(225deg, #e60909 0%, #f70303 50%, #e90303 100%);
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: -50px;
+    left: -100px;
+    z-index:-1;
+    transition: all .2s;
+}
+
+form button:hover::after{
+    transform: rotate(150deg);
+}
+
+form button:hover{
+    transform: translate(0, -6px);
+}
+
+
 
 .commentair {
     background-color: #E4DEDE;
     display: flex;
     justify-content: space-evenly;
-    position: relative;
+    flex-wrap: wrap;
 }
 
-.div {  
-    font-size: 4em;
-    font-weight: bold;
-    text-align: center;
+main h2{
     color: black;
-
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 2em;
 }
+
+
 
 
 /* avie des client */
-.photo1 {
+.avis img{
     width: 12vh;
     height: 12vh;
     position: relative;
@@ -246,25 +312,20 @@ nav li a {
     border-radius: 2vh;
 }
 
-.formulai{ 
-    display: flex;
-    justify-content: space-evenly;
-    position: relative;
-}
+
  
 .formule {
     background-color: rgb(255, 255, 254);
     display: flex;
     justify-content: space-evenly;
     position: relative;
+    flex-wrap: wrap;
 }
 /* coordonnee du client */
 
 .forme{
     
-    position: relative;
-    bottom: 5vh;  
-    right: vh;
+    position: relative;  
     justify-content: space-between;
     margin: 2vh;
 }
@@ -279,7 +340,19 @@ label{
     
 }
 
-input{
+input {
+    display: flex;
+    width: 70vh;
+    height: 7vh;
+    position: relative;
+    left: 10vh;
+    background-color: #67656569;
+    color: white;
+    font-size: 1.5em;
+    border: none;
+}
+
+textarea {
     display: flex;
     width: 70vh;
     height: 7vh;
@@ -290,49 +363,42 @@ input{
     font-size: 1.5em;
 }
 
-.addresse{
+.addresse h2{
+    color: rgb(241, 7, 7);
     position: relative;
-    bottom: vh;
-    left: 40vh;
+    text-decoration: underline;
 }
 
-h2{
-    color: red;
+.addresse h3{
+    color: rgb(253, 6, 6);
     top: 7vh;
     text-decoration: underline;
     padding: 4vh;
+    font-size: 1.5em;
 }
+
+
+main
+.addresse h3 {
+    text-decoration: none;
+}
+.addresse a{
+    text-decoration: none;
+}
+
 
 p{
-    color: black;
-    left: 10vh;
-    font-weight: bold;
-    font-size: 4vh;
-
-}
-
-a{
-    color: black;
-    text-decoration: none;
     position: relative;
-    top: vh;
+    color: black;
+    left: 5vh;
     font-weight: bold;
-    left: 3vh;
-    font-size: 4vh;
+    font-size: 1em;
+
 }
 
-.envoyer button{
-    position:relative;
-    bottom: 20VH;
-    left: 60vh;
-    font-size: 20px;
-    width: 20vh;
-    height: 7vh;
-    border-radius: 2vh;
-    border: none;
-    background-color: #fa0101;
-    color: white;
-}
+
+
+
 
 /* reseau sociau */
 
@@ -344,19 +410,97 @@ a{
 
 .reseau{
     display:flex;
-    width:50vh ;
     position: relative;
-    bottom: 70vh;
-    left: 80vh;
+ 
+
+}
+.reseau img{
+    width: 10vh;
 }
 
 /* apropos de nous */
 
-.apropos-de-nous{
-    display: flex;
-    justify-content: space-evenly;
-    position: relative;
+
+footer{
+    background-color: #00030869;
+    padding: 10px;
 }
 
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
 
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-top: 30px;
+    font-family: 'PT Serif', serif;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition:all 0.3s  ease
+}
+
+.footer-col ul li a:hover{
+    color:#ffffff;
+    padding-left: 8px;
+}
+.footer-col .social-links a{
+    display:inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(255, 255, 255,0.2);
+    margin-right: 10px;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height:40px;
+    border-radius: 50%;
+}
