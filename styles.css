@@ -20,7 +20,7 @@ h2{
 
 .logo img {
     position: relative;
-    top: -vh;
+   left: 4vh;
     height: 100px;
     width: 100px;
 
@@ -57,26 +57,26 @@ header nav a{
 
 header.principale{
     position: relative;
-    top: 50px;
+    top: 90px;
    
 } 
 
 header .principale h3{
     margin-top: 50px;
-    padding: 5px;
+    padding: 20px;
     font-size: 2em;
-    color: rgb(233, 174, 10);
+    color: rgba(9, 31, 231, 0.733);
 }
 
 header .principale h1{
     margin-top: 5px;
     font-size: 3em;
-    color: rgb(233, 174, 10);
+    color:rgba(9, 31, 231, 0.733);
 }
 
 .barre-de-Recherche {
     position: relative;
-    left: 65vh;
+    left: -10vh;
     top:10vh;
    
 }
@@ -102,6 +102,7 @@ header .principale h1{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    background-c;
 }
 
 .food img{
@@ -148,7 +149,7 @@ header .principale h1{
 
 .food button::after{
     content: '';
-    background: linear-gradient(225deg, #e6e7e5 0%, #cf8413 50%, #c52306 100%);
+    background: linear-gradient(225deg, #80fc04 0%, #a78a60 50%, #fc2904 100%);
     position: absolute;
     width: 400px;
     height: 400px;
@@ -168,7 +169,7 @@ header .principale h1{
 
 .voir-plus button {
     position: relative;
-    padding: 20px 50px;
+    padding: 15px 30px;
     border-radius: 30px;
     color:rgb(252, 249, 249);
     background: transparent;
@@ -177,13 +178,13 @@ header .principale h1{
     left: 100vh;
     cursor: pointer;
     font-size: 1.2em;
-    box-shadow: 0px -0px 0px 0px rgba(143, 64, 248, .5), 0px 0px 0px 0px rgba(39, 200, 255, .5);
+    box-shadow: 0px -0px 0px 0px rgba(106, 10, 233, 0.5), 0px 0px 0px 0px rgba(39, 200, 255, .5);
     transition: all .6s;
 }
 
 .voir-plus button::after{
     content: '';
-    background: linear-gradient(225deg, #6ed827 0%, #e24a2f 50%, #81cf41 100%);
+    background: linear-gradient(225deg, #68fd04 0%, #fd2904 50%, #71f703 100%);
     position: absolute;
     width: 400px;
     height: 400px;
