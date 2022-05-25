@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="script.js"></script>
 
 
     <title>Document</title>
@@ -151,48 +152,50 @@
         </section>
         <h2>COORDONNEES</h2>
         <section class="formule" id="coordonné">
-            <form action="traitement.php" method="post">
-                <div class="forme">
-                    <label for="comment">Commentaire <span class="required" aria-hidden="true"></span></label>
-                    <textarea autocomplete="new-password" id="comment" name="j4eea5eda8" cols="45" rows="8"
-                        maxlength="65525" required=""></textarea>
+            <div class="containers">
+                <div class="header">
+                    <h2>Vos coordonnées</h2>
                 </div>
-                <div class="forme">
-                    <label for="Nom">Nom<span class="required" aria-hidden="true"></span></label>
-                    <input type="text" name="Nom" id="Nom" required="">
-                </div>
-                <div class="forme">
-                    <label class="form" for="Prenoms">Prenoms<span class="required" aria-hidden="true"></span></label>
-                    <input type="text" name="Prenoms" id="Prenoms" required="">
-                </div>
-                <div class="forme">
-                    <label for="email">E-mail<span class="required" aria-hidden="true"></span></label>
-                    <input type="email" name="email" id="email" required="">
-                </div>
-                <div class="forme">
-                    <label for="password">Mot de passe<span class="required" aria-hidden="true"></span></label>
-                    <input type="password" name="password" id="password" required="">
-                </div>
-                <button type="submit">Envoyer</button>
-            </form>
+                <form class="form" id="form">
+                    <div class="form-controle">
+                        <label for="username">Nom d'utilisateur</label>
+                        <input type="text" id="username" placeholder="ronasdev">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation"></i>
+                        <small>Message d'erreur</small>
+                    </div>
+                    <div class="form-controle">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="ronasdev@gmail.com">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation "></i>
+                        <small>Message d'erreur</small>
+                    </div>
+                    <div class="form-controle">
+                        <label for="password">Mot de pass</label>
+                        <input type="password" id="password">
+                        <i class="fas fa-check-circle success"></i>
+                        <i class="fas fa-exclamation error"></i>
+                        <small>Message d'erreur</small>
+                    </div>
+                    <div class="form-controle">
+                        <label for="password2">confirmation du mot de passe</label>
+                        <input type="password" id="password2">
+                        <i class="fas fa-check-circle success"></i>
+                        <i class="fas fa-exclamation error"></i>
+                        <small>Message d'erreur</small>
+                    </div>
+                    <button type="submit"> <i class="fas fa-user-plus"></i> S'inscrire</button>
+                </form>
+            </div>    
             <div class="addresse">
                 <h2> ADRESSE</h2>
                 <h3>Adresse</h3>
                 <p> Non loin du marcheé assiyéyé <br> en allant ver le sud.Rue ABLODE</p>
                 <h3>Numero de téléphone: <a href="+0022892521077">+0022892521077</a></h3>
                 <h3 class>E-mail:<a href="royalalfurniture24@gmail.com">royalfurniture24@gmail.com</a></h3>
-
-                <div class="reseau">
-                    <a
-                        href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fpages%2Fcategory%2FFurniture%2FRoyal-Furniture-Sarl-104471631596599%2F"><img
-                            src="frites/face_book.png" alt="face_book"></a>
-                    <a href="https://www.instagram.com/accounts/login/?next=/p/B75dG_Mnp2f/"><img src="frites/inta2.png"
-                            alt="inta2"></a>
-                    <a href="https://twitter.com/royalfurniture"><img src="frites/twiter2.png" alt="royalfurniture"></a>
-                </div>
-
             </div>
-
+        
 
         </section>
 
@@ -246,9 +249,12 @@
                     <h4>Plus d'information</h4>
                     <div class="social-links"></div>
                     <ul>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a
+                            href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fpages%2Fcategory%2FFurniture%2FRoyal-Furniture-Sarl-104471631596599%2F"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/royalfurniture"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/accounts/login/?next=/p/B75dG_Mnp2f/"><i
+                                class="fab fa-instagram"></i></a>
                     </ul>
                 </div>
             </div>
