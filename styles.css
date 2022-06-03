@@ -28,9 +28,10 @@ h2{
 
 .logo img {
     position: relative;
-   left: 4vh;
-    height: 100px;
-    width: 100px;
+    left: 1vh;
+    height: 70px;
+    width: 70px;
+  
 
 }
 
@@ -43,25 +44,37 @@ header {
 }
 
 header nav{
-    display: flex;
-    flex-wrap: wrap;
+    
     justify-content: space-between ;
     padding: 20px;
 }
 
 header nav a{
-    color:#bababa;
+    color:#ffffff;
     text-decoration: none;
     margin-right: 10px;
+    transition: color.3s;
+    font-size: 1em;
+    flex-wrap:wrap;
+  
+    
+}
+
+.top-bar{
+    margin-top: 20px;
+}
+
+.headers{
+    display: flex;
+    height: 100px;
+    background-color: rgb(77, 74, 74);
+    border-bottom: 1px solid var(--color-second);
+    padding: 20px 40px;
+    
 }
 
 
-header nav a{
-    color: rgb(250, 248, 248);
-    transition: color.3s;
-    font-size: 1.5em;
 
-} 
 
 header.principale{
     position: relative;
@@ -70,42 +83,44 @@ header.principale{
 } 
 
 header .principale h3{
-    margin-top: 50px;
-    padding: px;
+   
+    padding: 50px;
     font-size: 2em;
     color: rgb(231, 127, 9);
 }
 
 header .principale h1{
-    margin-top: 5px;
-    font-size: 3em;
-    color:rgb(231, 172, 9);
+     font-size: 3em;
+    padding: 90px 10px 20px 0%;
+    text-shadow: -1px 1px 2px rgb(10, 9, 9);
+    animation: titre ease 5s;
+    color: rgb(230, 215, 14);
+    font-weight: bold;
 }
 
 .barre-de-Recherche {
     position: relative;
-    left: -10vh;
-    top:10vh;
-   
+    
 }
 
-.barre-de_Recherche label{
-    font-size: 15px; 
-   
-}
+
+  
 .barre-de-Recherche input{
-    width: 400px;
+    width: 100px;
     height: 45px;
     border-radius: 15px;
     background-color: rgba(252, 248, 248, 0.692);
     border: none;
 }
 
+
+/* *********************body************************** */
+
 .plats {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-c;
+    background-color: #e2c8a4;
 }
 
 .food img{
@@ -152,7 +167,7 @@ header .principale h1{
 
 .food button::after{
     content: '';
-    background: linear-gradient(225deg, #80fc04 0%, #a78a60 50%, #fc2904 100%);
+    background: linear-gradient(225deg, #fcd915 0%,  #fcd915 50%, #fcd915 100%);
     position: absolute;
     width: 400px;
     height: 400px;
@@ -169,6 +184,8 @@ header .principale h1{
 .food button:hover{
     transform: translate(0, -6px);
 }
+
+/* *************************boutton-voir-plus******************************************** */
 
 .voir-plus button {
     position: relative;
@@ -210,7 +227,7 @@ header .principale h1{
     color: white;
 }
 
-
+/* *************************avis***************************** */
 
 
 .commentair {
@@ -231,7 +248,7 @@ main h2{
 
 
 
-/* avie des client */
+
 .avis img{
     width: 12vh;
     height: 12vh;
@@ -240,7 +257,6 @@ main h2{
     left: 2.5vh;
 }
 
-/* dire des clients */
 .dire {
     width: 50vh;
     height: 10vh;
@@ -253,10 +269,10 @@ main h2{
 .mot {
     position: relative;
     bottom: 13vh;
-    left: 14vh;
+    left: 13vh;
 }
 
-/* nom et date */
+
 .nom {
     font-size: 1em;
     font-weight: bold;
@@ -269,18 +285,19 @@ main h2{
     font-size: 1em;
     font-weight: bold;
     position: relative;
-    top: 4vh;
-    left: 37vh;
+    top: 8vh;
+    left: 19vh;
 }
 
-/* avis */
+
 
 .avis {
     background-color: rgb(250, 250, 253);
-    width: 70vh;
-    height: 20.4vh;
-    margin: 10vh;
+    width: 50vh;
+    height: 24vh;
+    margin: 5vh;
     border-radius: 2vh;
+    margin-right:100px ;
 }
 
 *{
@@ -289,7 +306,7 @@ main h2{
  
 
 
-/* coordonnee du client */
+
 
 
 .formule {
@@ -540,7 +557,7 @@ ul{
     color: #ffffff;
     text-decoration: none;
     font-weight: 300;
-    color: #bbbbbb;
+    color: #fdfcfc;
     display: block;
     transition:all 0.3s  ease
 }
@@ -553,7 +570,7 @@ ul{
     display:inline-block;
     height: 40px;
     width: 40px;
-    background-color: rgba(122, 103, 103, 0.2);
+    background-color: rgb(253, 250, 250);
     margin-right: 10px;
     margin: 0 10px 10px 0;
     text-align: center;
